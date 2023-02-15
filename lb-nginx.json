@@ -34,14 +34,6 @@
     "disable_trust_client_ip_headers": {},
     "enable_ddos_detection": {
       "enable_auto_mitigation": {}
-    },
-    "enable_ip_reputation": {
-      "ip_threat_categories": [
-        "SPAM_SOURCES",
-        "REPUTATION",
-        "BOTNETS",
-        "SCANNERS"
-      ]
     }
   }
 }
