@@ -4,7 +4,10 @@ The following resources are intended to get you up and running as soon as possib
 
 To apply these templates to your tenant, please apply them in the following order for best results:
 
-shared-\*, origin-\*.json, and lb-\*.json
+1. shared-\*
+***Optional Steps*** 
+2. origin-\*.json
+3. lb-\*.json
 
 ### Here is how I would apply these templates to a tenant:
 
