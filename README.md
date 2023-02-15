@@ -8,5 +8,5 @@ shared-\*, origin-\*.json, and lb-\*.json
 
 Here is how I would apply these templates to a tenant:
 
-[[shared-appfw-blocking.json]]
-[[shared-appfw-monitoring.json]]
+[shared-appfw-blocking.json]
+[shared-appfw-monitoring.json]
