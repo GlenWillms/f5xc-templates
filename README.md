@@ -20,4 +20,4 @@ To apply these templates to your tenant, please apply them in the following orde
 ### Optional for test/demo purposes
 
 - [Origin Server pointing to nginx.org](origin-nginx.json)
-- [Load Balancer for nginx.org using shared AppFW policy](lb-nginx.json)
+- [Load Balancer for nginx.org using shared AppFW blocking policy](lb-nginx.json)
