@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "name": "ofac-deny",
+    "labels": {},
+    "annotations": {},
+    "description": "Deny list based on Office of Foreign Assets Control - Sanctioned Countries (OFAC)",
+    "disable": false
+  },
+  "spec": {
+    "algo": "FIRST_MATCH",
+    "any_server": {},
+    "deny_list": {
+      "ip_prefix_set": [],
+      "asn_list": {
+        "as_numbers": [
+          204791,
+          205515,
+          208090,
+          28761,
+          41269,
+          43222,
+          43564,
+          49617,
+          59744,
+          8654
+        ]
+      },
+      "asn_set": [],
+      "country_list": [
+        "COUNTRY_BY",
+        "COUNTRY_BA",
+        "COUNTRY_BI",
+        "COUNTRY_CF",
+        "COUNTRY_CU",
+        "COUNTRY_IR",
+        "COUNTRY_IQ",
+        "COUNTRY_KP",
+        "COUNTRY_XK",
+        "COUNTRY_LY",
+        "COUNTRY_MK",
+        "COUNTRY_SO",
+        "COUNTRY_SD",
+        "COUNTRY_SY",
+        "COUNTRY_ZW",
+        "COUNTRY_CD",
+        "COUNTRY_LB",
+        "COUNTRY_NI",
+        "COUNTRY_RU",
+        "COUNTRY_SS",
+        "COUNTRY_VE",
+        "COUNTRY_YE"
+      ],
+      "tls_fingerprint_classes": [],
+      "tls_fingerprint_values": [],
+      "default_action_allow": {}
+    },
+    "simple_rules": []
+  }
+}

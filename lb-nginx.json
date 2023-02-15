@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "nginx-demo",
+    "annotations": {},
+    "disable": false
+  },
+  "spec": {
+    "domains": [
+      "nginx.demo.com"
+    ],
+    "http": {
+      "dns_volterra_managed": false,
+      "port": 80
+    },
+    "downstream_tls_certificate_expiration_timestamps": [],
+    "advertise_on_public_default_vip": {},
+    "default_route_pools": [
+      {
+        "pool": {
+          "name": "origin-nginx-demo",
+          "kind": "origin_pool"
+        },
+        "weight": 1,
+        "priority": 1,
+        "endpoint_subsets": {}
+      }
+    ],
+    "routes": [],
+    "app_firewall": {
+      "namespace": "shared",
+      "name": "appfw-default-blocking",
+      "kind": "app_firewall"
+    },
+    "disable_trust_client_ip_headers": {},
+    "enable_ddos_detection": {
+      "enable_auto_mitigation": {}
+    },
+    "enable_ip_reputation": {
+      "ip_threat_categories": [
+        "SPAM_SOURCES",
+        "REPUTATION",
+        "BOTNETS",
+        "SCANNERS"
+      ]
+    }
+  }
+}

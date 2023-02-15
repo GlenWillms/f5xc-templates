@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "name": "hc-http-200-302",
+    "namespace": "shared",
+    "labels": {},
+    "annotations": {},
+    "description": "Based shared HTTP health check that returns up on 200 & 302",
+    "disable": false
+  },
+  "spec": {
+    "http_health_check": {
+      "use_origin_server_name": {},
+      "path": "/",
+      "use_http2": false,
+      "headers": {},
+      "request_headers_to_remove": [],
+      "expected_status_codes": [
+        "200",
+        "302"
+      ]
+    },
+    "timeout": 3,
+    "interval": 15,
+    "jitter": 0,
+    "unhealthy_threshold": 1,
+    "healthy_threshold": 3,
+    "jitter_percent": 30
+  }
+}

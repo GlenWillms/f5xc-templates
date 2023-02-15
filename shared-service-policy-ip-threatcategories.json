@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "name": "ip-threat-intel",
+    "namespace": "shared",
+    "labels": {},
+    "annotations": {},
+    "description": "Base policy to deny all IP threat categories",
+    "disable": false
+  },
+  "spec": {
+    "rule_list": {
+      "rules": [
+        {
+          "metadata": {
+            "name": "ip-threat-intel",
+            "disable": false
+          },
+          "spec": {
+            "action": "DENY",
+            "ip_threat_category_list": {
+              "ip_threat_categories": [
+                "SPAM_SOURCES",
+                "WINDOWS_EXPLOITS",
+                "WEB_ATTACKS",
+                "BOTNETS",
+                "SCANNERS",
+                "REPUTATION",
+                "PHISHING",
+                "PROXY",
+                "MOBILE_THREATS",
+                "TOR_PROXY",
+                "DENIAL_OF_SERVICE",
+                "NETWORK"
+              ]
+            },
+            "waf_action": {
+              "none": {}
+            }
+          }
+        }
+      ]
+    },
+    "simple_rules": []
+  }
+}

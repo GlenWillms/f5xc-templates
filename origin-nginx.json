@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "origin-nginx-demo",
+    "namespace": "default",
+    "description": "Sample origin pool",
+    "disable": false
+  },
+  "spec": {
+    "origin_servers": [
+      {
+        "public_name": {
+          "dns_name": "nginx.org"
+        },
+        "labels": {}
+      }
+    ],
+    "no_tls": {},
+    "port": 80,
+    "same_as_endpoint_port": {},
+    "healthcheck": [
+      {
+        "namespace": "shared",
+        "name": "hc-http-200-302",
+        "kind": "healthcheck"
+      }
+    ],
+    "loadbalancer_algorithm": "LB_OVERRIDE",
+    "endpoint_selection": "LOCAL_PREFERRED"
+  }
+}
