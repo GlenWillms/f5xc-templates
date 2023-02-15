@@ -5,7 +5,9 @@ The following resources are intended to get you up and running as soon as possib
 To apply these templates to your tenant, please apply them in the following order for best results:
 
 1. shared-\*
-\ ***Optional Steps*** 
+
+***Optional Steps***
+
 2. origin-\*.json
 3. lb-\*.json
 
