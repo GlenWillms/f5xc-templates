@@ -9,7 +9,7 @@ To apply these templates to your tenant, please apply them in the following orde
 2. origin-\*.json
 3. lb-\*.json
 
-### Here is how I would apply these templates to a tenant:
+### Here is suggested order to apply these templates to a tenant:
 
 - [Shared Web Application Firewall Policy - Blocking](shared-appfw-blocking.json)
 - [Shared Web Application Firewall Policy - Monitoring](shared-appfw-monitoring.json)
@@ -21,3 +21,7 @@ To apply these templates to your tenant, please apply them in the following orde
 
 - [Origin Server pointing to nginx.org](origin-nginx.json)
 - [Load Balancer for nginx.org using shared AppFW blocking policy](lb-nginx.json)
+
+### How to use Shared objects
+
+Shared App Firewall Policies need to be asigned at the namespace level. To enable policies, go to Load Balancers -> Security -> Service Policies -> Select Active Service Policies. From this page you can add the Shared Service Policies to the selected namespace.
