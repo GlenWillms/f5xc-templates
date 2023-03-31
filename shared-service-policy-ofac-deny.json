@@ -52,7 +52,7 @@
       ],
       "tls_fingerprint_classes": [],
       "tls_fingerprint_values": [],
-      "default_action_allow": {}
+      "default_action_next_policy": {}
     },
     "simple_rules": []
   }
